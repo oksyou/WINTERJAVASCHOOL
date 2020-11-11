@@ -1,0 +1,4 @@
+git rm -r --cached "ConvertingToXML/.idea/"
+git rm -r --cached "ConvertingToXML/target/"
+git rm -r --cached "Annotation/.idea/"
+git rm -r --cached "Annotation/target/"
