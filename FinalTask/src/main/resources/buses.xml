@@ -1,0 +1,18 @@
+<buses>
+  <bus number="7a">
+    <time>27-11-2020 14:57:32</time>
+    <location x="7.1" y="10.2"/>
+  </bus>
+  <bus number="26">
+    <time>27-11-2020 14:57:50</time>
+    <location x="15.9" y="2.1"/>
+  </bus>
+  <bus number="31">
+    <time>27-11-2020 14:58:02</time>
+    <location x="15.9" y="2.4"/>
+  </bus>
+  <bus number="51а">
+    <time>27-11-2020 14:58:27</time>
+    <location x="10" y="10"/>
+  </bus>
+</buses>

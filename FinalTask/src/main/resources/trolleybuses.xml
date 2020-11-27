@@ -1,0 +1,14 @@
+<trolleybuses>
+    <trolleybus number="7">
+        <time>27-11-2020 14:57:32</time>
+        <location x="26.8" y="3.3"/>
+    </trolleybus>
+    <trolleybus number="12">
+        <time>27-11-2020 13:57:38</time>
+        <location x="12.3" y="6.3"/>
+    </trolleybus>
+    <trolleybus number="20д">
+        <time>27-11-2020 13:57:40</time>
+        <location x="21.4" y="7.9"/>
+    </trolleybus>
+</trolleybuses>
