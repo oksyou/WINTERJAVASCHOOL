@@ -1,4 +1,4 @@
-package ru.oks.javaschool.xml.model;
+package ru.oks.javaschool.xml.model.buses;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;

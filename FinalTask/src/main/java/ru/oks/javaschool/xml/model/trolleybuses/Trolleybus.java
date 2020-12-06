@@ -1,12 +1,14 @@
-package ru.oks.javaschool.xml.model;
+package ru.oks.javaschool.xml.model.trolleybuses;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+import ru.oks.javaschool.xml.model.Location;
+import ru.oks.javaschool.xml.model.Transport;
 
 /**
  * Класс троллейбуса.
  */
 @JacksonXmlRootElement(localName = "trolleybus")
-public class Trolleybus extends Transport{
+public class Trolleybus extends Transport {
     /**
      * Конструктор.
      */

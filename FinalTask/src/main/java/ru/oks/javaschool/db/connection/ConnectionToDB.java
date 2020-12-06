@@ -24,18 +24,16 @@ public class ConnectionToDB {
     /**
      * Консутркутор.
      *
-     * @throws IOException ошибка инициализации
      */
-    public ConnectionToDB() throws IOException {
+    public ConnectionToDB() {
         loadProperties();
     }
 
     /**
      * Метод загрузки настроек конфигурации в память.
      *
-     * @throws IOException ошибка получения настроек
      */
-    private void loadProperties() throws IOException {
+    private void loadProperties()  {
         Properties properties = new Properties();
         try {
             properties.load(
@@ -43,9 +41,9 @@ public class ConnectionToDB {
             for (Map.Entry<Object, Object> entry : properties.entrySet()) {
                 this.properties.put((String) entry.getKey(), (String) entry.getValue());
             }
-        } catch (Exception e) {
-            System.out.println("Error occurred during loading properties");
-            throw e;
+        } catch (IOException e) {
+            throw new RuntimeException("Не удалось получить настройки конфигурации!");
+
         }
     }
 
@@ -61,6 +59,7 @@ public class ConnectionToDB {
             dataSource.setUser(properties.get("db.user"));
             dataSource.setPassword(properties.get("db.password"));
             dataSource.setDatabaseName(properties.get("db.name"));
+
         }
 
         return dataSource;

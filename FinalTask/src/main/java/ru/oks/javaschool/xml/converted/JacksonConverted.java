@@ -7,11 +7,11 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import java.io.IOException;
 
 /**
- * Класс сериализации и десериализации xml.
+ * Класс сериализации и десериализации объектов xml.
  */
 public class JacksonConverted {
     /**
-     * Десериализация.
+     * Десериализация объекта из xml в объект нужного типа.
      *
      * @param xml строка xml
      * @param type тип, в который надо конвертировать
@@ -25,7 +25,7 @@ public class JacksonConverted {
     }
 
     /**
-     * Сериализация.
+     * Сериализация объекта в xml-строку.
      *
      * @param obj объект, который необходимо сериализовать
      * @return xml строку
