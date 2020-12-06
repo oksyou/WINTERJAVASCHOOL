@@ -105,7 +105,7 @@ public class TransportService implements TransportRepository {
     @Override
     public Transport find(long id) {
         String getSTransport=
-                "SELECT type, number, time, x, y " +
+                "SELECT id, type, number, time, x, y " +
                         "FROM "+TABLE_NAME+" WHERE id="+id;
 
         Transport transport=null;
